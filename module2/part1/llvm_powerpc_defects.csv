@@ -1,0 +1,21 @@
+bug_id,creation_date,updated_at,closed_at,status,priority,component,severity,reported_by,defect_type
+GH-123389,2025-01-17T19:12:01,2025-01-30T22:25:24,,open,Medium,Unknown,Major,Upstream LLVM (tankf33der),Regression
+GH-125502,2025-02-03T14:03:12,2025-03-18T17:41:26,2025-03-18T17:41:26,closed,Medium,Unknown,Major,Upstream LLVM (arsenm),Regression
+GH-125540,2025-02-03T17:31:44,2025-02-03T17:36:09,,open,Medium,Unknown,Major,Upstream LLVM (firewave),Regression
+GH-126491,2025-02-10T09:32:36,2025-02-16T11:37:55,,open,Medium,Unknown,Major,Upstream LLVM (jfalcou),Regression
+GH-126836,2025-02-12T02:24:53,2025-04-16T14:02:36,2025-04-16T14:02:35,closed,Medium,Unknown,Major,Upstream LLVM (yus3710-fj),Regression
+GH-128377,2025-02-22T23:06:30,2025-02-25T08:39:56,,open,Medium,Unknown,Major,Upstream LLVM (johnplatts),Regression
+GH-128644,2025-02-25T07:34:03,2025-04-07T19:50:22,2025-04-07T19:50:22,closed,Medium,Unknown,Major,Upstream LLVM (chleroy),Regression
+GH-130269,2025-03-07T10:23:36,2025-08-25T12:24:16,,open,Medium,Unknown,Major,Upstream LLVM (folkertdev),Regression
+GH-133599,2025-03-29T21:54:23,2025-06-28T21:18:27,,open,Medium,Unknown,Major,Upstream LLVM (workingjubilee),Regression
+GH-136596,2025-04-21T18:45:37,2025-04-23T18:12:07,2025-04-23T15:36:16,closed,Medium,Unknown,Major,Upstream LLVM (tstellar),Regression
+GH-141643,2025-05-27T17:54:29,2025-07-02T19:28:46,2025-07-02T19:28:46,closed,Medium,Unknown,Major,Upstream LLVM (arsenm),Regression
+GH-146837,2025-07-03T09:07:01,2025-07-03T09:20:03,,open,Medium,Unknown,Major,Upstream LLVM (venkyqz),Regression
+GH-150913,2025-07-28T09:49:31,2025-10-17T07:28:34,,open,Medium,Unknown,Major,Upstream LLVM (mhx),Regression
+GH-151375,2025-07-30T18:40:29,2025-08-13T19:15:35,2025-08-13T19:00:34,closed,Medium,Unknown,Major,Upstream LLVM (amy-kwan),Regression
+GH-156826,2025-09-04T08:30:13,2025-09-04T18:31:31,,open,Medium,Unknown,Major,Upstream LLVM (XChy),Regression
+GH-159789,2025-09-19T15:18:15,2025-09-19T15:26:43,,open,Medium,Unknown,Major,Upstream LLVM (OPNA2608),Regression
+GH-159855,2025-09-19T21:52:55,2025-09-19T23:27:51,2025-09-19T23:26:35,closed,Medium,Unknown,Major,Upstream LLVM (chaitanyav),Regression
+GH-160313,2025-09-23T14:45:07,2025-10-04T13:27:41,,open,Medium,Unknown,Major,Upstream LLVM (tancheng1988),Regression
+GH-163496,2025-10-15T05:02:11,2025-10-15T05:54:09,,open,Medium,Unknown,Major,Upstream LLVM (vishalc-ibm),Regression
+GH-163706,2025-10-16T06:19:50,2025-10-17T04:29:09,,open,Medium,Unknown,Major,Upstream LLVM (hbathini),Regression

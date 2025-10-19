@@ -1,0 +1,37 @@
+{
+    "repository_path": "./llvm-project",
+    "modules_to_scan": [
+      "clang",
+      "llvm",
+      "lld",
+      "lldb",
+      "mlir",
+      "compiler-rt",
+      "libcxx",
+      "openmp",
+      "polly",
+      "bolt",
+      "clang-tools-extra"
+    ],
+    "source_file_extensions": [
+      ".cpp",
+      ".h",
+      ".cxx",
+      ".hpp",
+      ".c"
+    ],
+    "satd_patterns": [
+      "\\b(FIXME|TODO|HACK|XXX):"
+    ],
+    "indicator_thresholds": {
+      "high_risk_density": 2.0,
+      "medium_risk_density": 1.0
+    },
+    "output_files": {
+      "raw_data": "raw_satd_data.csv",
+      "base_measures": "base_measures.csv",
+      "derived_measures": "derived_measures.csv",
+      "indicators": "indicators.csv",
+      "chart": "satd_distribution_chart.png"
+    }
+  }

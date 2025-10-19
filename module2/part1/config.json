@@ -1,0 +1,33 @@
+{
+    "fetch_settings": {
+      "github_repo": "llvm/llvm-project",
+      "search_keywords": "PowerPC PPC",
+      "issue_state": "all",
+      "created_after_date": "2025-01-01",
+      "output_csv_file": "llvm_powerpc_defects.csv"
+    },
+    "analysis_settings": {
+      "input_data_files": [
+        "llvm_powerpc_defects.csv",
+        "mock_customer_defects.csv"
+      ],
+      "effort_per_defect": 3,
+      "effort_unit": "Person-Days",
+      "filter_by_defect_type": "Regression",
+      "prediction_model": {
+        "type": "moving_average",
+        "window_size_weeks": 3
+      },
+      "weeks_to_predict": 3,
+      "inflow_thresholds": {
+        "red_alert_gt": 10,
+        "yellow_warning_eq": 10
+      },
+      "output_files": {
+        "base_measures": "base_inflow_measures.csv",
+        "derived_measures": "derived_predictions.csv",
+        "indicators": "risk_indicators.csv",
+        "chart": "inflow_prediction_chart.png"
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+module,risk_level
+clang,Low Risk
+llvm,Medium Risk
+lld,Low Risk
+lldb,Low Risk
+mlir,Low Risk
+compiler-rt,Low Risk
+libcxx,Low Risk
+openmp,Low Risk
+polly,Low Risk
+bolt,Low Risk
+clang-tools-extra,Low Risk
