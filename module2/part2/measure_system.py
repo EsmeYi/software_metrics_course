@@ -7,6 +7,52 @@ import matplotlib.pyplot as plt
 
 def load_config(config_path='config.json'):
     """Loads the configuration file."""
+# {
+#     "repository_path": "./llvm-project",
+# WCGW: 
+# The repo can't be access
+# The exact branch/version are unclear; The repo is not the latest version; The repo is not the main branch
+#     "modules_to_scan": [
+#       "clang",
+#       "llvm",
+#       "lld",
+#       "lldb",
+#       "mlir",
+#       "compiler-rt",
+#       "libcxx",
+#       "openmp",
+#       "polly",
+#       "bolt",
+#       "clang-tools-extra"
+#     ],
+# WCGW:
+# Completeness: Only moudules in modules_to_scan, what if the moudule names are changed or new modules added.
+#     "source_file_extensions": [
+#       ".cpp",
+#       ".h",
+#       ".cxx",
+#       ".hpp",
+#       ".c"
+#     ],
+# WCGW:
+# The extensions are incomplete, LLVM have other important file types, like TableGen files (end with .td)
+#     "satd_patterns": [
+#       "\\b(FIXME|TODO|HACK|XXX):"
+#     ],
+# WCGW:
+# The patterns are not reliable enough; they may miss real SATD or count things that aren't SATD
+#     "indicator_thresholds": {
+#       "high_risk_density": 2.0,
+#       "medium_risk_density": 1.0
+#     },
+#     "output_files": {
+#       "raw_data": "raw_satd_data.csv",
+#       "base_measures": "base_measures.csv",
+#       "derived_measures": "derived_measures.csv",
+#       "indicators": "indicators.csv",
+#       "chart": "satd_distribution_chart.png"
+#     }
+#   }
     if not os.path.exists(config_path):
         print(f"Error: Configuration file '{config_path}' not found.")
         sys.exit(1)
@@ -34,7 +80,7 @@ def run_analysis(config):
     pattern = re.compile(config['satd_patterns'][0])
     thresholds = config['indicator_thresholds']
     output_files = config['output_files']
-    
+
     # Prepare lists to hold the results
     all_base_measures = []
     all_derived_measures = []
@@ -88,7 +134,8 @@ def run_analysis(config):
             'source_file_count': source_file_count
         }
         all_derived_measures.append(derived_measure)
-        
+        # WCGW:
+        # This is a poor representation of density because it treats a small 10-line file and a massive 10,000-line file as equal (both are just 1 file).
         # 3. Indicator
         risk_level = 'Low Risk'
         if debt_density >= thresholds['high_risk_density']:
@@ -97,6 +144,8 @@ def run_analysis(config):
             risk_level = 'Medium Risk'
         indicator = {'module': module, 'risk_level': risk_level}
         all_indicators.append(indicator)
+        # WCGW:
+        # The indicators didn't come from the experts' knowledge
 
     # --- Write all collected data to files ---
     raw_data_file.close()
@@ -140,7 +189,9 @@ def visualize_results(base_measures, config):
     print(f"\nChart saved as {chart_filename}")
     
     plt.show()
-
+# WCGW:
+# Regarding the visualization, the chart is not a concise representation.
+# Didn't visualize the risk level.
 # --- Main execution block ---
 if __name__ == '__main__':
     config = load_config()
