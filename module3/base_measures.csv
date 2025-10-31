@@ -1,0 +1,12 @@
+module,satd_count
+clang,7748
+llvm,8623
+lld,109
+lldb,555
+mlir,1310
+compiler-rt,533
+libcxx,402
+openmp,209
+polly,95
+bolt,54
+clang-tools-extra,852

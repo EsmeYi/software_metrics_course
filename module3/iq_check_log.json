@@ -1,0 +1,140 @@
+[
+  {
+    "timestamp": "2025-10-31T10:32:27.371875",
+    "check_name": "Config File Health (Exists, Readable, Valid JSON)",
+    "status": "PASS",
+    "details": "Successfully loaded and parsed config.json"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.371913",
+    "check_name": "Repo Path Exists & Is Directory",
+    "status": "PASS",
+    "details": "./llvm-project"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.371921",
+    "check_name": "Modules List Valid (Format)",
+    "status": "PASS",
+    "details": "11 modules specified"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.371926",
+    "check_name": "Extensions List Valid (Format)",
+    "status": "PASS",
+    "details": "5 extensions specified"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.477387",
+    "check_name": "Extensions List Completeness",
+    "status": "WARN",
+    "details": "Potentially relevant extensions in repo but not in config: ['.cmake', '.py', '.test']"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.477462",
+    "check_name": "SATD Pattern Valid (Regex)",
+    "status": "PASS",
+    "details": "\\b(FIXME|TODO|HACK|XXX):"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.477464",
+    "check_name": "Thresholds Valid (Format)",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.477469",
+    "check_name": "Output Files Config Valid (Keys)",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.495232",
+    "check_name": "Git: Is Git Repository",
+    "status": "PASS",
+    "details": "./llvm-project"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.511052",
+    "check_name": "Git: On Expected Branch",
+    "status": "PASS",
+    "details": "Current branch is 'main'"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.528124",
+    "check_name": "Git: Latest Commit is Today",
+    "status": "WARN",
+    "details": "Last commit was 11 days ago (2025-10-20)."
+  },
+  {
+    "timestamp": "2025-10-31T10:32:27.542778",
+    "check_name": "Git History Depth",
+    "status": "PASS",
+    "details": "Repository is a full clone."
+  },
+  {
+    "timestamp": "2025-10-31T10:32:30.384887",
+    "check_name": "Found 'Lowercase Tags (with colon)'",
+    "status": "PASS",
+    "details": "Limited scan found no obvious examples."
+  },
+  {
+    "timestamp": "2025-10-31T10:32:30.384915",
+    "check_name": "Found 'Uppercase Tags (no colon)'",
+    "status": "WARN",
+    "details": "Found examples missed by main pattern (limit 5): ['cir-opt.cpp:10', 'cir-opt.cpp:34', 'ClangRefactor.cpp:241', 'ClangRefactor.cpp:479', 'ClangRefactor.cpp:485']"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:30.385544",
+    "check_name": "Module List Config",
+    "status": "WARN",
+    "details": "Modules in repo not in config: ['libc', 'llvm-libgcc', 'flang-rt', 'orc-rt', 'flang', 'cmake', 'libsycl', 'runtimes', 'utils', 'libcxxabi', 'libunwind', 'libclc', 'cross-project-tests', 'third-party', 'offload']"
+  },
+  {
+    "timestamp": "2025-10-31T10:32:30.387633",
+    "check_name": "File Access: Raw Data File Openable",
+    "status": "PASS",
+    "details": "raw_satd_data.csv"
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.577839",
+    "check_name": "All Configured Modules Exist",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.577917",
+    "check_name": "Overall File Readability Impact",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.660402",
+    "check_name": "Raw Data Logging",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.665536",
+    "check_name": "Base Measures Output",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.669394",
+    "check_name": "Derived Measures Output",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:29.674483",
+    "check_name": "Indicators Output",
+    "status": "PASS",
+    "details": ""
+  },
+  {
+    "timestamp": "2025-10-31T10:35:35.816863",
+    "check_name": "All Output Files Generated",
+    "status": "PASS",
+    "details": "All 5 files created and populated."
+  }
+]

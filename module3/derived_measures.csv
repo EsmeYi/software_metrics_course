@@ -1,0 +1,12 @@
+module,debt_density,source_file_count
+clang,0.34,22998
+llvm,1.12,7665
+lld,0.48,227
+lldb,0.14,4096
+mlir,0.55,2365
+compiler-rt,0.14,3704
+libcxx,0.04,11307
+openmp,0.33,632
+polly,0.11,860
+bolt,0.18,295
+clang-tools-extra,0.32,2656
